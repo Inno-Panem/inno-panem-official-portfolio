@@ -1,0 +1,25 @@
+.app {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;  // clicking link will make it smoother instead of instantaneous
+        scroll-snap-type: y mandatory;  // for snapping scroll feature
+        scrollbar-width: none; //for firefox
+        
+        /* Hides the scroll bar from the screen*/
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
