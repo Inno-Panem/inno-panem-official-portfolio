@@ -43,6 +43,24 @@
             }
             h3{
                 font-size: 30px;
+
+                span {
+                    font-style: inherit;
+                    color: darkgreen;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
             }
             a{
                 position: absolute;
@@ -51,8 +69,13 @@
 
                 img{
                     width: 30px;
-                    
+                    animation: arrowBlink 2s infinite;
+                }
 
+                @keyframes arrowBlink {
+                    100% {
+                        opacity: 0;  // will be zero opacity at 100%, gives blinking aesthetic
+                    }
                 }
             }
         }
