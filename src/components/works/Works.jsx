@@ -35,6 +35,7 @@ export default function Works() {
     },
   ];
 
+  // function that deals with the sliding functionality of the works page
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
