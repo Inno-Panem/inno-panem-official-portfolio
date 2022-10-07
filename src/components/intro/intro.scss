@@ -17,7 +17,7 @@
         .imgContainer {
             width: 700px;
             height: 700px;
-            background-color: darkgreen;
+            background-color: $mainColor;
             border-radius: 50%;
             display: flex;  
             align-items: flex-end;  // fits in the circle border
@@ -41,6 +41,11 @@
     .right {
         flex: 0.5;
         position: relative;
+
+         /* Hides the scroll bar from the screen*/
+         &::-webkit-scrollbar {
+            display: none;
+        }
 
         .wrapper {
             width: 100%;
@@ -75,7 +80,7 @@
 
                 span {
                     font-style: inherit;
-                    color: darkgreen;
+                    color: $mainColor;
                 }
 
                 .ityped-cursor {
@@ -99,6 +104,7 @@
                 img{
                     width: 30px;
                     animation: arrowBlink 2s infinite;
+                    
                 }
 
                 @keyframes arrowBlink {

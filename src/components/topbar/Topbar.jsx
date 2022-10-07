@@ -3,8 +3,6 @@ import { Person, Mail } from "@material-ui/icons";
 // Logo code:
 // <img src="http://i.imgur.com/tZPp41C.png" className = "logo" alt="inno" width = "25" height = "25"></img>  
 
-
-
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className = {"topbar " + (menuOpen && " active")}>

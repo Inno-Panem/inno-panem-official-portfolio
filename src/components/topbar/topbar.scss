@@ -4,7 +4,7 @@
     width: 100%;
     height: 70px;
     background-color: white;
-    color: #1C6758;
+    color: $mainColor;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -70,7 +70,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: #1C6758;
+                    background-color: $mainColor;
                     transform-origin: left;  // not centered line, in order to make a cross
                     transition: all 2s ease;  // all rotations and opacity are changed in transitiion after 2 seconds
                 }
@@ -80,7 +80,7 @@
 
     // if topbar read active, then color of topbar changes
     &.active {
-        background-color: #1C6758;
+        background-color: $mainColor;
         color: white;
 
         .hamburger {

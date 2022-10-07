@@ -1,7 +1,9 @@
+@import "../../global.scss";
+
 .menu {
     width: 300px;
     height: 100vh;
-    background-color: #1C6758;
+    background-color: $mainColor;
     position: fixed;
     top: 0;
     right: -300px;  // since width is 300px to hide the box
